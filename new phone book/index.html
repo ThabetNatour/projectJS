@@ -1,0 +1,75 @@
+<!--
+//תאבת נאטור חגאגרה - 212790406
+//חכם נאטור - 318486479
+//תוכנה 50\5
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone Book</title>
+  <link rel="icon" href="./images/phone-book.png" type="image/png">
+  <link rel="stylesheet" href="./style/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="./js/js.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Phone Book</h1>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <section id="contact-header">
+        <div id="h2-contact-list">
+          <h2>Contact List</h2>
+        </div>
+        <div class="top-controls">
+          <input type="text" id="searchInput" placeholder="Search contact..." />
+          <div class="top-controls-btn">
+            <button><i class="fas fa-user-plus"></i> Add New Contact</button>
+            <button id="delete-all"><i class="fas fa-trash"></i> Delete All</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-list">
+        <ul class="contacts">
+        </ul>
+      </section>
+    </div>
+
+    <!--MODAL - Info Popup Overlay -->
+    <div id="infoPopup" class="popup-overlay">
+      <div class="popup-content">
+        <button id="close-popup"><span>&times;</span></button>
+        <h2>Contact Info</h2>
+        <span><strong>Name: </strong><span id="infoName"></span></span>
+        <br><br>
+        <span><strong>Phone Number: </strong><span id="infoPhone"></span></span>
+        <br><br>
+        <span><strong>Email: </strong><span id="infoEmail"></span></span>
+        <br><br>
+        <span><strong>Address: </strong><span id="infoAddress"></span></span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="copy-right">
+      <span>
+        &copy; All rights reserved - Natour Creations 2025
+      </span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
